@@ -85,3 +85,11 @@ div[class*="box"] {
   height: 20vh;
 }
 
+/*  */
+
+img {
+  max-width: 100%;
+  /* auto prevents it from being deformed  */
+  height: auto;
+}
+
