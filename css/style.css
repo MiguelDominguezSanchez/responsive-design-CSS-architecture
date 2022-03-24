@@ -1,0 +1,50 @@
+/* Define styles */
+/*  */
+/*  */
+/*  */
+/* [] attributes selector */
+/* all elements starting with box + {st else}   */
+
+div[class*="box"] {
+  margin: 3rem auto;
+  background-color: orangered;
+}
+
+/* Fixed Height && Width */
+.box {
+  width: 300px;
+  height: 300px;
+}
+
+/* Dimensions not absolute units but */
+/* relative units */
+.box-flexible {
+  /* fluid to 50% screen */
+  width: 50%;
+  /* if I give % 
+  the parent container
+  must have the size in pixels
+  */
+  /* 20% viewport height */
+  height: 20vh;
+}
+
+/* instead of define height && width base */
+/* define max && min points */
+.box-flexible-2 {
+  /* Absolute measurement units px */
+  /* but */
+  /* as I utilize max && min both in width && height  */
+  /* it allows responsiveness */
+  /* maximum width till it will grow */
+  max-width: 960px;
+  /* minimum width till it will shrink */
+  min-width: 280px;
+  /* maximum height till it will grow */
+  max-height: 480px;
+  /* minimum height till it will shrink */
+  min-height: 280px;
+  /* height always depend on the content */
+  /* as the box is empty */
+  /* it takes the reference the minimum height 280px */
+}
