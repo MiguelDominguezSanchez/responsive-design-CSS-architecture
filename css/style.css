@@ -2,6 +2,13 @@
 /*  */
 /*  */
 /*  */
+/* there is a change */
+/* when we utilize absolute properties measurement units, in combination of max && min */
+/* than */
+/* we utilize relative measurement properties, in specific width and height, and also we use max && min */
+/*  */
+/*  */
+/*  */
 /* [] attributes selector */
 /* all elements starting with box + {st else}   */
 
@@ -48,3 +55,33 @@ div[class*="box"] {
   /* as the box is empty */
   /* it takes the reference the minimum height 280px */
 }
+
+/* Define Pre-established Widths */
+
+
+.box-flexible-3 {
+  max-width: 960px;
+  min-width: 280px;
+  max-height: 480px;
+  min-height: 280px;
+  /* Greater Hierarchy */
+  /* over max && min */
+  /* that are omitted */
+  /* Defined width in pixels */
+  width: 300px;
+  /* Defined height in pixels */
+  height: 300px;
+}
+
+.box-flexible-4 {
+  max-width: 960px;
+  min-width: 280px;
+  max-height: 480px;
+  min-height: 280px;
+  /* Instead of establish in absolute measurement unit */
+  /* I do it in relative ones  */
+  /* like % && vh  */
+  width: 50%;
+  height: 20vh;
+}
+
